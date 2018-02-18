@@ -3,7 +3,7 @@ import urllib2
 import datetime
 
 reddit = praw.Reddit('bot1')
-subreddit=reddit.subreddit("testingground4bots")
+subreddit=reddit.subreddit("monsterhunter")
 patch_notes_url = 'http://monsterhunterworld.com/us/topics/update_ver101/'
 
 
