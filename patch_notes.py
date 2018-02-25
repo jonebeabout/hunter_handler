@@ -55,3 +55,8 @@ if last_known != current_version:
   post = body.strip() + sig
   title = 'Monster Hunter World - Patch Notes ' + datetime.date.today().strftime("%d %B %Y")
   subreddit.submit(title,selftext=post)
+  with open ("patch_notes.log", "a") as file:
+    file.write(datetime.datetime.now().strftime("%y-%m-%d %H%M") + ': Posted new patch notes to /r/monsterhunter \n')
+else:
+  with open ("patch_notes.log", "a") as file:
+    file.write(datetime.datetime.now().strftime("%y-%m-%d %H%M") + ': No new patch notes found \n')
